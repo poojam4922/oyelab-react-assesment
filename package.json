@@ -1,4 +1,5 @@
 {
+  "homepage": "https://poojam4922.github.io/oyelab-react-assesment",
   "name": "dummyjson",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +10,8 @@
     "lint": "eslint .",
     "start": "vite preview",
     "preview": "vite preview",
-    "deploy": "vercel --prod"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
